@@ -24,7 +24,7 @@
 
 ⬇️
 
-4️⃣ **Admin Dashboard **📦 (For Shopkeeper)
+4️⃣ **Admin Dashboard**📦 (For Shopkeeper)
 
 - Allows the shopkeeper to ```view and manage all incoming orders```.
 - Once the order is packed, the shopkeeper ```marks it as "Ready for Pickup"```.
