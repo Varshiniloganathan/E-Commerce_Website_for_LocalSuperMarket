@@ -1,0 +1,68 @@
+/* HomePage.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body and html cover the entire page */
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the main container take the full height of the viewport */
+  }
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20%;
+    background-color: aliceblue;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-top: 120px; 
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 250px; /* Set fixed width for each card */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    
+  }
+  
+  button {
+    background: #000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background:#555;
+  }
+  

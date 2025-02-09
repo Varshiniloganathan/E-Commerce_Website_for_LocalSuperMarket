@@ -1,0 +1,10 @@
+[
+    {"id":1,"name":"Salt","price":60,"image":"./data/salt.jpeg"},
+    {"id":1,"name":"GaramMasala","price":60,"image":"./data/Garammasala.jpg"},
+    {"id":1,"name":"Maggie","price":60,"image":"./data/Maggie.jpeg"},
+    {"id":1,"name":"ContinentalXtra","price":60,"image":"./data/Continental.jpeg"},
+    {"id":1,"name":"BruInstant100g","price":160,"image":"./data/Bru.jpeg"},
+    {"id":1,"name":"BengalGramDal500g","price":60,"image":"./data/Pottukadalai.jpg"},
+    {"id":1,"name":"Surfexcel","price":60,"image":"./data/Surfexcel.jpg"},
+    {"id":1,"name":"PanteneShampoo","price":60,"description":"Pantene Advanced Hairfall Solution, Hairfall Control Shampoo, Pack of 1, 650ML","image":"./data/Pantene.jpg"}
+]
