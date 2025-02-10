@@ -5,11 +5,15 @@ body, html {
     background-color: #f4f4f4; /* Light background for the page */
   }
   
+  
   .main-content {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full height of the page */
+    height: 100vh; 
   }
+ 
+  
+
   
   .cart-container {
     display: flex;
@@ -18,10 +22,10 @@ body, html {
     padding: 20px;
     background-color: #fff; /* White background for cart container */
     flex-grow: 1;
-    margin-top: 60px; /* To avoid overlapping with navbar */
+    margin-top: calc(60px + 20px); /* To avoid overlapping with navbar */
   }
   
-  h2 {
+  .cart-container h2 {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 20px;
@@ -152,5 +156,10 @@ body, html {
   .remove-button:hover {
     background-color: darkred;
   }
+  .CartPage-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
   
   
