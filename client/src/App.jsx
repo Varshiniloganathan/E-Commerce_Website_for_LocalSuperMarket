@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {Routes,Route} from 'react-router-dom';
+import {Routes,Route,useLocation} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
@@ -7,6 +7,8 @@ import Signin from './pages/Signin';
 import './App.css';
 //import Navbar from './components/Navbar';
 function App() {
+  const location = useLocation(); 
+  const isNavbarVisible = location.pathname !== '/Signin';
   const [cartItems,setCartItems] = useState([]);
   const addToCart = (product) => {
     setCartItems((prevItems)=>[...prevItems,product]);
@@ -17,8 +19,9 @@ function App() {
 
   return (
     <>
-    <div className='container'>
-      <Navbar/>
+    <div className={`container ${isNavbarVisible ? '' : 'without-navbar'}`}>
+    {isNavbarVisible && <Navbar />}  
+    {location.pathname !== '/Signin' && <Navbar />} 
       <Routes>
       <Route path="/" element={<HomePage addToCart={addToCart}/>} />
       <Route path="/CartPage" element={<CartPage cartItems={cartItems} removeFromCart={removeFromCart}/>}/>
