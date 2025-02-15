@@ -1,0 +1,97 @@
+/* Checkout.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body and html cover the entire page */
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the main container take the full height of the viewport */
+  }
+.checkout-container {
+    max-width: 1200px;
+    margin: 250px auto 0; /* Increased top margin to avoid hiding under navbar */
+    padding: 20px;
+    color: #333; /* Dark grey text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1; /* Ensure it stays above other elements if necessary */
+    position: relative; /* Ensure z-index works */
+    background-color: #fff; /* White background for the container */
+}
+
+.checkout-container h2,
+.checkout-container h3 {
+    color: #333; /* Dark grey text */
+    margin-top: 0; /* Remove default margin for headings */
+}
+
+/* Order Details Section */
+.order-details {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between items */
+}
+
+.order-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light grey border */
+    background-color: #f9f9f9; /* Light grey background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+.order-item-image {
+    width: 30%; /* Full width of the container */
+    height: 90px; /* Reduced height for images */
+    object-fit: cover; /* Ensure images fit well */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.order-item-info {
+    text-align: center;
+}
+
+.order-item-info h4 {
+    margin: 0;
+    color: #333; /* Dark grey text */
+}
+
+.order-item-info p {
+    margin: 5px 0;
+    color: #666; /* Medium grey text */
+}
+
+/* Total Price Section */
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #333; /* Dark grey text */
+    margin-top: 20px;
+}
+
+/* Pickup Instructions Section */
+.pickup-instructions {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light grey border */
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+.pickup-instructions p {
+    color: #666; /* Medium grey text */
+    margin: 0;
+}

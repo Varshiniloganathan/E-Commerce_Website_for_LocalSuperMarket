@@ -22,7 +22,7 @@ body, html {
     padding: 20px;
     background-color: #fff; /* White background for cart container */
     flex-grow: 1;
-    margin-top: calc(60px + 20px); /* To avoid overlapping with navbar */
+    margin-top:250px; /* To avoid overlapping with navbar */
   }
   
   .cart-container h2 {
