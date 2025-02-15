@@ -38,7 +38,7 @@
   .btn {
     width: 45%;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
@@ -47,7 +47,7 @@
   }
   
   .btn:hover {
-    background-color: #45a049;
+    background-color: #555;
   }
   
   .google-btn {
@@ -56,7 +56,7 @@
     justify-content: center;
     padding: 12px;
     margin-top: 20px;
-    background-color: #4285f4;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
@@ -71,6 +71,6 @@
   }
   
   .google-btn:hover {
-    background-color: #357ae8;
+    background-color: grey;
   }
   

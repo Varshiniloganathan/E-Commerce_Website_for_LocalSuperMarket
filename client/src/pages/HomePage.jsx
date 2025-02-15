@@ -1,10 +1,6 @@
 import './HomePage.css';
-import React,{useEffect,useState} from "react";
-const HomePage=({addToCart})=>{
-    const [products, setProducts] = useState([]);
-    useEffect(()=>{
-        fetch("/data/products.json").then((response)=>response.json()).then((data)=>setProducts(data)).catch((error)=>console.error("Error loading products:",error));
-    },[]);
+import React from "react";
+const HomePage=({products,addToCart})=>{
     return(
         <>
         <div className="product-container">

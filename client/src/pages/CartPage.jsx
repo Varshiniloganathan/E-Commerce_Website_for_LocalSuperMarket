@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './CartPage.css';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 const CartPage = ({ cartItems, removeFromCart }) => {
   // Initialize quantity for each item if not set already
@@ -11,7 +11,7 @@ const CartPage = ({ cartItems, removeFromCart }) => {
       quantity: item.quantity || 1, // Default quantity to 1 if not set
     }))
   );
-
+  const navigate = useNavigate();
   useEffect(() => {
     // Update local state when cartItems change from parent
     setUpdatedCartItems(
@@ -40,11 +40,23 @@ const CartPage = ({ cartItems, removeFromCart }) => {
       return total + price * quantity;
     }, 0);
   };
+  const handleCheckout = () => {
+    if (updatedCartItems.length === 0) {
+      alert('Your cart is empty. Start adding products to your cart!');
+    } else {
+      navigate('/checkout', {
+        state: {
+          cartItems: updatedCartItems,
+          totalPrice: calculateTotal(),
+        },
+      });
+    }
+  };
 
   return (
     <>
-      <h2>Your Cart</h2>
       <div className="cart-container">
+      <h2>Your Cart</h2>
         {updatedCartItems.length === 0 ? (
           <p>Your cart is empty. Start adding products to your cart!</p>
         ) : (
@@ -79,15 +91,16 @@ const CartPage = ({ cartItems, removeFromCart }) => {
             ))}
           </div>
         )}
-        <div className="total-price">
+       
+      </div>
+      <div className="total-price">
           <h3>Total: ₹{calculateTotal()}</h3>
         </div>
-      </div>
       <div className="cart-actions">
         <Link to="/" className="continue-shopping">
           Continue shopping
         </Link>
-        <button className="checkout-button">Checkout</button>
+        <button className="checkout-button" onClick={handleCheckout}>Checkout</button>
       </div>
     </>
   );
