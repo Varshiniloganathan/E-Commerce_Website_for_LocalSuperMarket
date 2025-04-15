@@ -1,4 +1,11 @@
 /* SignInRegister.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif; /* Use a clean font */
+  background-color: #fdf6e3; /* Mild sand white background */
+}
 .signin-container {
     display: flex;
     justify-content: center;

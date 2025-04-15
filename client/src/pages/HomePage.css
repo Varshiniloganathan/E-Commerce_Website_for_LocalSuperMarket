@@ -1,13 +1,13 @@
-/* HomePage.css */
-body, html {
+/* HomePage.css 
+ body, html {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure body and html cover the entire page */
+    height: 100%; Ensure body and html cover the entire page 
   }
   .main-content {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Make the main container take the full height of the viewport */
+    height: 100vh; Make the main container take the full height of the viewport 
   }
 .product-container {
     display: flex;
@@ -29,7 +29,7 @@ body, html {
     padding: 20px;
     text-align: center;
     transition: transform 0.2s;
-    width: 250px; /* Set fixed width for each card */
+    width: 250px; /* Set fixed width for each card 
   }
   
   .product-card:hover {
@@ -65,5 +65,285 @@ body, html {
   
   button:hover {
     background:#555;
+  } */
+
+  /*.product-container {
+    margin-top: 20px;
   }
   
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }*/
+  /* General styles for the body and main content 
+/*body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif; /* Use a clean font 
+  background-color: #f8f9fa; /* Light gray background 
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport 
+}
+
+/* Product container styles 
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #ffffff; /* White background for the product section 
+  flex-grow: 1;
+  overflow-y: auto;
+  justify-content: center; /* Center the product cards 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container 
+}
+
+/* Product card styles 
+.product-card {
+  background: #e9f5ff; /* Light blue background for cards 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  width: 250px; /* Fixed width for each card 
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Add hover effect 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover 
+}
+
+/* Product image styles 
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Typography styles 
+h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333; /* Dark gray for headings 
+}
+
+p {
+  font-size: 16px;
+  color: #555; /* Medium gray for text 
+}
+
+/* Button styles 
+button {
+  background: #007bff; /* Primary blue 
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3; /* Darker blue on hover 
+}
+
+/* Card styles 
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  background-color: #ffffff; /* White background for cards 
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Dark gray for card titles 
+}
+
+/* Primary button styles 
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for responsiveness 
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%; /* Make cards take up most of the width on smaller screens 
+  }
+}*/
+/* General styles for the body and main content */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif; /* Use a clean font */
+  background-color: #fdf6e3; /* Mild sand white background */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 100px; /* ensure this is more than the navbar height */
+  box-sizing: border-box;
+}
+
+/* Product container styles */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 120px;
+  margin-top: 30px;
+  background-color: #fffaf0; /* Light sand white background for the product section */
+  flex-grow: 1;
+  overflow-y: auto;
+  justify-content: center; /* Center the product cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+}
+
+/* Product card styles */
+.product-card {
+  background: #fefae0; /* Light beige background for cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  width: 150px; /* Fixed width for each card */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Add hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+/* Product image styles */
+.product-image {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; /* Ensures the image fits within the container */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  margin-bottom: 10px; /* Add spacing below the image */
+}
+
+/* Typography styles */
+h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #4a4a4a; /* Dark gray for headings */
+}
+
+p {
+  font-size: 16px;
+  color: #6b6b6b; /* Medium gray for text */
+}
+
+/* Button styles */
+button {
+  background: #d4a373; /* Warm brown button color */
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #b08968; /* Darker warm brown on hover */
+}
+
+/* Card styles */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  background-color: #fffaf0; /* Light sand white background for cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4a4a4a; /* Dark gray for card titles */
+}
+
+/* Primary button styles */
+.btn-primary {
+  background-color: #d4a373; /* Warm brown button color */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b08968; /* Darker warm brown on hover */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%; /* Make cards take up most of the width on smaller screens */
+  }
+  
+}
